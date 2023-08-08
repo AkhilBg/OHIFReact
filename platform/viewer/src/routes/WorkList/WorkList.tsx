@@ -365,24 +365,20 @@ function WorkList({
                 >
                   {t(`Modes:${mode.displayName}`)}
                 </Button>
-                {openNote ? (
-                  <Button
-                    rounded="full"
-                    variant="outlined"
-                    endIcon={<Icon name="launch-arrow" />} // launch-arrow | launch-info
-                    className={classnames('font-medium	', { 'ml-2': !isFirst })}
-                    onClick={() => setOpenNote(!openNote)}
-                  >
-                    {t('History')}
-                  </Button>
-                ) : (
-                  <TextArea />
-                )}
+                <Button
+                  rounded="full"
+                  variant="outlined"
+                  endIcon={<Icon name="history-icon" />} // launch-arrow | launch-info
+                  className={classnames('font-medium	', { 'ml-2': !isFirst })}
+                  onClick={() => setOpenNote(!openNote)}
+                >
+                  {t('History')}
+                </Button>
 
                 <Button
                   rounded="full"
                   variant="outlined"
-                  endIcon={<Icon name="launch-arrow" />} // launch-arrow | launch-info
+                  endIcon={<Icon name="reports-icon" />} // launch-arrow | launch-info
                   className={classnames('font-medium	', { 'ml-2': !isFirst })}
                   onClick={() => {}}
                 >

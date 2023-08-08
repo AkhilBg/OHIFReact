@@ -57,6 +57,8 @@ import notificationsInfo from './../../assets/icons/notifications-info.svg';
 import notificationsWarning from './../../assets/icons/notifications-warning.svg';
 import notificationsError from './../../assets/icons/notifications-error.svg';
 import notificationsSuccess from './../../assets/icons/notifications-success.svg';
+import historyIcon from './../../assets/icons/history-icon.svg';
+import reportsIcon from './../../assets/icons/reports-icon.svg';
 
 /** Tools */
 import toolZoom from './../../assets/icons/tool-zoom.svg';
@@ -162,6 +164,8 @@ const ICONS = {
   'notifications-error': notificationsError,
   'notifications-success': notificationsSuccess,
   'notifications-warning': notificationsWarning,
+  'history-icon': historyIcon,
+  'reports-icon': reportsIcon,
 
   /** Tools */
   'tool-zoom': toolZoom,
