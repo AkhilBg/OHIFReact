@@ -4,6 +4,7 @@ const TextArea = () => {
   const [value, setValue] = useState('');
 
   const handleChange = event => {
+    event.preventDefault();
     // This function will be called whenever the user changes the value of the
     // text area.
     setValue(event.target.value);

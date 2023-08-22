@@ -26,7 +26,9 @@ import {
   AboutModal,
   UserPreferences,
   LoadingIndicatorProgress,
-  TextArea,
+  AddHistory,
+  Modal,
+  // TextArea,
 } from '@ohif/ui';
 
 import i18n from '@ohif/i18n';
@@ -80,7 +82,10 @@ function WorkList({
       : {};
   const sortedStudies = studies;
 
-  const [openNote, setOpenNote] = useState(false);
+  const [openHistory, setopenHistory] = useState(false);
+  const handleOpenModal = () => {
+    setopenHistory(true);
+  };
 
   if (canSort) {
     studies.sort((s1, s2) => {
@@ -370,11 +375,14 @@ function WorkList({
                   variant="outlined"
                   endIcon={<Icon name="history-icon" />} // launch-arrow | launch-info
                   className={classnames('font-medium	', { 'ml-2': !isFirst })}
-                  onClick={() => setOpenNote(!openNote)}
+                  onClick={e => {
+                    setopenHistory(!openHistory);
+                    console.log('Worklist history', e);
+                  }}
                 >
-                  {t('History')}
+                  {'History'}
                 </Button>
-
+                {openHistory && <Modal />}
                 <Button
                   rounded="full"
                   variant="outlined"

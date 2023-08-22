@@ -68,7 +68,7 @@ import InputRange from './InputRange';
 import InputNumber from './InputNumber';
 import CheckBox from './CheckBox';
 import LoadingIndicatorProgress from './LoadingIndicatorProgress';
-import TextArea from './TextArea';
+import AddHistory from './AddHistory';
 
 export {
   AboutModal,
@@ -142,5 +142,5 @@ export {
   ViewportPane,
   ViewportOverlay,
   WindowLevelMenuItem,
-  TextArea,
+  AddHistory,
 };
